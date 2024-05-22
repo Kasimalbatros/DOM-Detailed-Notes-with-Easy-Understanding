@@ -1,0 +1,13 @@
+How to Change the Styles on DOM Elements ...
+
+1.Setting Styles With the .style Property
+
+2.The className Property
+
+3.The classList Property( Adding Classes with classList.add() )
+
+note:- Removing Classes With classList.remove()
+note:- Replacing Classes with classList.replace()
+note:- Check the Presence of a Class with classList.contains()
+
+4.

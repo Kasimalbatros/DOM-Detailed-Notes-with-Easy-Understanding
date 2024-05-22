@@ -1,0 +1,9 @@
+How to Work with Attributes of DOM Elements  ?
+
+1.The getAttribute Method
+
+2.The setAttribute Method
+
+3.The removeAttribute Method
+
+4.The hasAttribute Method

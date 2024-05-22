@@ -1,0 +1,13 @@
+What Can We Do With DOM   ?
+
+Anwer:-
+
+What You Can Do With the DOM
+DOM manipulation allows developers to interact with the structure, style, and 
+content of web pages. The following are some of the things you can do with the DOM:
+
+Change and remove existing elements in the DOM.
+Create and add new elements to the page.
+Change the styles for elements.
+Add event listeners to the elements to make them interactive.
+

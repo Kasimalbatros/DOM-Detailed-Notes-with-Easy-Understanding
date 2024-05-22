@@ -1,0 +1,12 @@
+How to Select DOM Elements
+To do something with DOM elements, you first have to select or access ...
+
+1. getElementById
+
+2. getElementsByClassName
+
+3. getElementsByTagName
+
+4. querySelector
+
+5. querySelectorAll

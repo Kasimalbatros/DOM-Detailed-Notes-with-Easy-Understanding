@@ -1,0 +1,66 @@
+How to Traverse the DOM  ...
+
+To traverse the DOM means to move between the different elements/nodes within 
+the HTML document. This may includes selecting or accessing parent, child, or
+ sibling elements (or nodes). 
+
+But before we get into how to traverse the DOM, you need to understand the difference between nodes and elements.
+------------------------------------------------------------------------------
+Difference Between a Node and an Element
+-----------------------------------------------------------------------------
+Nodes are the building blocks of the DOM. They represents different components in the
+ HTML structure.
+
+Elements are a specific type of node, but not all nodes are elements. Other
+ types of content like attributes of elements, text content, and comments within 
+the code are nodes too. But they are not elements.
+
+--------------------------------------------------------------------------------------
+
+Selecting a Parent with parentNode vs parentElement
+-------------------------------------------------------
+When it comes to selecting the parent of a DOM element, you can use either the parentNode or 
+parentElement. Both will get the parent of the element you pass to it.
+
+
+------------------------------------------------------------------------------------------
+Selecting Elements with childNodes vs children
+------------------------------------------------------------------------------------------
+You can select the contents of an element using both the .childNodes and .children properties. 
+But they work differently.
+
+childNodes: returns a NodeList of all the child nodes within the selected elements. 
+It will include elements and non-element nodes like text nodes, comment nodes, and 
+so on.
+
+.children: returns an HTML collection of only the child elements (element nodes) of
+ the selected objects. It will not include any non-element nodes like texts or 
+comments.
+
+
+
+------------------------------------------------------------------------------------------
+Selecting the First or Last Child/Element
+----------------------------------------------------------------------------------------
+If you need to select only the first/last child or element, you can use these four properties.
+
+firstChild: Selects only the first child node of the parent element.
+lastChild: Selects only the last child node of the parent element.
+firstElementChild: Selects only the first child element of the parent.
+lastElementChild: Selects only the last child element of the parent
+
+Note:- 
+
+That's why it's generally safer to stick to firstElementChild and lastElementChild.
+
+
+---------------------------------------------------------------------------------------------
+
+Selecting a Sibling of Nodes in the DOM
+You've learned how to select a parent or a child of an element. You can also select a 
+sibling of an element. You do that using the following properties:
+
+nextSibling: Selects the next node within the same parent element.
+nextElementSibling: Selects the next element, and ignores any non-element nodes.
+previousSibling: Selects the previous node within the same parent element.
+previousElementSibling: Selects the previous element, and ignores any non-element nodes.

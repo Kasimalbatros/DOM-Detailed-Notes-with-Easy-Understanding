@@ -1,0 +1,10 @@
+How to Change the Content of DOM Elements  ...
+
+Now, let's see how you can manipulate the DOM to change the content of a webpage.
+
+1.The innerHTML Property
+
+Note:-  If the content you're inserting comes from user input or any untrusted source, be sure to validate and sanitize it before using innerHTML to prevent XSS attacks.
+ You can use a library like DOMPurify to do this. (OPTIONAL note)
+
+2.The innerText and textContent Properties (difference beteen innerHTML,innerText,textContent)

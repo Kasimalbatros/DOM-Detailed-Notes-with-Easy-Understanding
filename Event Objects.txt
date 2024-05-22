@@ -1,0 +1,69 @@
+Event Objects   ...
+-----------------------------------------------------------------------------------------------
+
+The Event Object
+
+This is a JavaScript object the browser passes as an argument to the event
+ handler function anytime an event occurs. The object includes some useful
+ properties and methods like the following:
+
+1.type:  the type of event that occurred (like click, mouseover, keydown, and so on)
+2.target:  the element on which the event occurred
+3.clientX and clientY:  the horizontal and vertical coordinates of the mouse pointer
+ at the time the event occurred.
+4.preventDefault():   prevents default actions associated with the events like 
+preventing a form submission on the submit event.
+5.stopPropagation():   prevents the event from propagating through the DOM.
+ More on that later.
+
+
+What is the use of writing event objects  ?
+
+1.Access Event Information: The event object (event) provides details about the event, 
+such as the type of event (event.type), the target element that triggered the event
+ (event.target), mouse coordinates (event.clientX, event.clientY), keyboard key codes
+ (event.keyCode), and more depending on the type of event.
+
+javascript
+Copy code
+element.addEventListener('click', function(event) {
+    console.log('Event Type:', event.type);
+    console.log('Target Element:', event.target);
+    console.log('Mouse X Coordinate:', event.clientX);
+    console.log('Mouse Y Coordinate:', event.clientY);
+});
+
+------------------------------------------------------------------------------------------------
+
+2.Manipulate Event Behavior: You can use properties and methods of the event object to control or modify how the event behaves. For example, preventing the default action of an event (event.preventDefault()), stopping the event from bubbling up the DOM tree (event.stopPropagation()), etc.
+
+javascript
+Copy code
+element.addEventListener('submit', function(event) {
+    // Prevent the form from submitting
+    event.preventDefault();
+    // Custom form handling logic
+});
+
+-----------------------------------------------------------------------------------------------
+Handle Events Dynamically: By using the event object, you can create dynamic event handlers that respond differently based on the event details. For instance, you might have different behavior for a click event based on the target element or other event properties.
+
+javascript
+Copy code
+element.addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+        // Handle button click
+    } else if (event.target.tagName === 'A') {
+        // Handle link click
+    }
+});
+Overall, including the event parameter in your event handler function allows you to
+access event-specific information and customize your code's behavior based on the 
+event details.
+
+
+
+
+
+
+

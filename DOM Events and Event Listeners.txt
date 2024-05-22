@@ -1,0 +1,43 @@
+DOM Events and Event Listeners   ...
+
+DOM events are actions that take place in the browser. These events are what allows 
+you to make websites interactive.
+
+Some DOM events are user-initiated like clicking, moving the mouse, or typing on 
+the keyboard. Others are browser-initiated like when a page finishes loading.
+
+------------------------------------------------------------------------------------
+Difference Between Event Listener and Event Handler
+------------------------------------------------------------------------------------
+An event listener is a method that lets you know when an event has taken place. 
+It allows you to "listen" or keep an eye out for DOM events. That way, when an event 
+happens, you can do something.
+
+An event handler is a response to the event. It's a function that runs when an event
+ occurs.
+
+For example, you can attach an event listener to a button that lets you know when a 
+user clicks that button. Then you can write an event handler (a function) that prints 
+something on screen anytime a click event occurs.
+
+
+
+Note:- In this case, the event listener is what informs your app when a click occurs and then trigger a
+response. And the response (the function that runs when the click occurs) is an 
+example of an event handler.
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+Three Ways to Register Events in JavaScript
+-----------------------------------------------------------------------------------
+The following are three different ways you can listen to and respond to DOM events using JavaScript.
+
+1.Using inline event handlers:
+
+2.Using on-event handlers:
+
+3.Using the addEventListener method

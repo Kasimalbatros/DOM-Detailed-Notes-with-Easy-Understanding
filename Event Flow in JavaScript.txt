@@ -1,0 +1,30 @@
+Event Flow in JavaScript ...
+
+1.Event Bubbling
+This is when the event is first registered on the target (or specified element) on
+ which the event happened, and then registered outwards to the parent and onwards to the outermost element.
+
+2.Event Capturing
+Event capturing is the opposite of event bubbling. The event starts from the outermost ancestor element
+ and travels down the DOM tree to the target element.
+
+
+Note:- By default, browsers use the event bubbling approach. So there is no need to 
+add any argument to the event listener. This is the order in which the event handlers
+ will run in response to a click on the button:
+
+button
+#innerDiv
+#outerDiv
+
+
+3.Event Stop Propagation Method  ...
+
+The Event stopPropagation() Method
+You've learned about how the event bubbling registers an event on an element and 
+continues registering the event all the way to the outermost ancestor 
+element. You've also seen how event capturing does the opposite.
+
+But what if you don't want the event to register on all the ancestors?
+ That's where the stopPropagation method comes in. You can use this method to prevent 
+the event from propagating through the whole DOM.

@@ -1,0 +1,26 @@
+Types of Events  ...
+
+Mouse events:
+
+click: when the element is clicked.
+dbclick: when the element is double clicked.
+mouseover: when the mouse pointer enters the element.
+mouseleave: when the mouse pointer leaves the element.
+mousedown: when the mouse is pressed down over an element.
+mouseup: when the mouse is released over an element.
+Keyboard events:
+
+keydown: when a key on the keyboard is pressed down.
+keyup: when a key on the keyboard is released.
+keypress: when a key is pressed and shows the actual key that was pressed. Note that this event is not fired for all keys, especially non-printable keys.
+Form events:
+
+submit: when a form is submitted.
+input: when the value of an input field changes.
+change: when the value of a form element changes and loses focus.
+Window events:
+
+load: when the browser finishes loading the page.
+unload: when the user leaves the page.
+resize: when the browser window is resized.
+scroll: when the user scrolls through the document.
